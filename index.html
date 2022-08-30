@@ -1,0 +1,1851 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="cover hide"></div>
+    <header>
+      <nav class="main-nav">
+        <div class="nav-icons">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            viewBox="0 0 32 32"
+            fill="#4d4d4d"
+            class="nav-icon burger-icon"
+          >
+            <path
+              d="M 4 7 L 4 9 L 28 9 L 28 7 L 4 7 z M 4 15 L 4 17 L 28 17 L 28 15 L 4 15 z M 4 23 L 4 25 L 28 25 L 28 23 L 4 23 z"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            viewBox="0 0 50 50"
+            style="fill: #000000"
+            class="nav-icon search-icon"
+          >
+            <path
+              d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            class="nav-icon"
+            fill="#00000"
+          >
+            <path
+              d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"
+            ></path>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="48"
+            height="48"
+            viewBox="0 0 48 48"
+            class="nav-icon"
+            fill="#00000"
+          >
+            <path
+              d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"
+            ></path>
+          </svg>
+        </div>
+        <input type="text" placeholder="Type to search..." class="search-bar" />
+      </nav>
+    </header>
+    <div class="sidebar">
+      <div class="nav-label">
+        <span class="nav-headlline hiding-element">Ramil Test</span>
+        <svg
+          enable-background="new 0 0 32 32"
+          id="Layer_4"
+          version="1.1"
+          viewBox="0 0 32 32"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          class="main-arrow"
+        >
+          <polygon
+            fill="none"
+            points="12,5 12,11 31,11   31,21 12,21 12,27 1,16 "
+            stroke="#000000"
+            stroke-linejoin="round"
+            stroke-miterlimit="10"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+      <nav class="sidebar-nav">
+        <ul>
+          <li class="flex-box menu-item">
+            <a href="#" class="sidebar-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                class="sidebar-icon"
+                fill="#00000"
+              >
+                <path
+                  d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"
+                ></path>
+              </svg>
+              <span class="hiding-element">Dashboard</span></a
+            >
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 34.075 34.075"
+              style="enable-background: new 0 0 34.075 34.075"
+              xml:space="preserve"
+              class="arrow-small hiding-element"
+              fill="#00000"
+            >
+              <g>
+                <path
+                  d="M24.57,34.075c-0.505,0-1.011-0.191-1.396-0.577L8.11,18.432c-0.771-0.771-0.771-2.019,0-2.79    L23.174,0.578c0.771-0.771,2.02-0.771,2.791,0s0.771,2.02,0,2.79l-13.67,13.669l13.67,13.669c0.771,0.771,0.771,2.021,0,2.792    C25.58,33.883,25.075,34.075,24.57,34.075z"
+                />
+              </g>
+            </svg>
+          </li>
+          <div class="sub-menu">
+            <ul>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 1</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 2</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 3</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 4</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 5</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 6</span>
+              </li>
+            </ul>
+          </div>
+
+          <li class="flex-box menu-item">
+            <a href="#" class="sidebar-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                class="sidebar-icon"
+                fill="#00000"
+              >
+                <path
+                  d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"
+                ></path>
+              </svg>
+              <span class="hiding-element">Application</span>
+            </a>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 34.075 34.075"
+              style="enable-background: new 0 0 34.075 34.075"
+              xml:space="preserve"
+              class="arrow-small hiding-element"
+              fill="#00000"
+            >
+              <g>
+                <path
+                  d="M24.57,34.075c-0.505,0-1.011-0.191-1.396-0.577L8.11,18.432c-0.771-0.771-0.771-2.019,0-2.79    L23.174,0.578c0.771-0.771,2.02-0.771,2.791,0s0.771,2.02,0,2.79l-13.67,13.669l13.67,13.669c0.771,0.771,0.771,2.021,0,2.792    C25.58,33.883,25.075,34.075,24.57,34.075z"
+                />
+              </g>
+            </svg>
+          </li>
+          <div class="sub-menu">
+            <ul>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 1</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 2</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 3</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 4</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 5</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 6</span>
+              </li>
+            </ul>
+          </div>
+        </ul>
+
+        <span class="section-label hiding-element">UI ELEMENTS</span>
+        <ul>
+          <li class="flex-box menu-item">
+            <a href="#" class="sidebar-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                class="sidebar-icon"
+                fill="#00000"
+              >
+                <path
+                  d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"
+                ></path></svg
+              ><span class="hiding-element">Widgets</span></a
+            >
+          </li>
+
+          <li class="flex-box menu-item">
+            <a href="#" class="sidebar-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                class="sidebar-icon"
+                fill="#00000"
+              >
+                <path
+                  d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"
+                ></path></svg
+              ><span class="hiding-element">eCommerce</span></a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 34.075 34.075"
+              style="enable-background: new 0 0 34.075 34.075"
+              xml:space="preserve"
+              class="arrow-small hiding-element"
+              fill="#00000"
+            >
+              <g>
+                <path
+                  d="M24.57,34.075c-0.505,0-1.011-0.191-1.396-0.577L8.11,18.432c-0.771-0.771-0.771-2.019,0-2.79    L23.174,0.578c0.771-0.771,2.02-0.771,2.791,0s0.771,2.02,0,2.79l-13.67,13.669l13.67,13.669c0.771,0.771,0.771,2.021,0,2.792    C25.58,33.883,25.075,34.075,24.57,34.075z"
+                />
+              </g>
+            </svg>
+          </li>
+          <div class="sub-menu">
+            <ul>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 1</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 2</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 3</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 4</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 5</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 6</span>
+              </li>
+            </ul>
+          </div>
+          <li class="flex-box menu-item">
+            <a href="#" class="sidebar-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                class="sidebar-icon"
+                fill="#00000"
+              >
+                <path
+                  d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"
+                ></path></svg
+              ><span class="hiding-element">Components</span></a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 34.075 34.075"
+              style="enable-background: new 0 0 34.075 34.075"
+              xml:space="preserve"
+              class="arrow-small hiding-element"
+              fill="#00000"
+            >
+              <g>
+                <path
+                  d="M24.57,34.075c-0.505,0-1.011-0.191-1.396-0.577L8.11,18.432c-0.771-0.771-0.771-2.019,0-2.79    L23.174,0.578c0.771-0.771,2.02-0.771,2.791,0s0.771,2.02,0,2.79l-13.67,13.669l13.67,13.669c0.771,0.771,0.771,2.021,0,2.792    C25.58,33.883,25.075,34.075,24.57,34.075z"
+                />
+              </g>
+            </svg>
+          </li>
+          <div class="sub-menu">
+            <ul>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 1</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 2</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 3</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 4</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 5</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 6</span>
+              </li>
+            </ul>
+          </div>
+          <li class="flex-box menu-item">
+            <a href="#" class="sidebar-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                class="sidebar-icon"
+                fill="#00000"
+              >
+                <path
+                  d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"
+                ></path></svg
+              ><span class="hiding-element">Content</span></a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 34.075 34.075"
+              style="enable-background: new 0 0 34.075 34.075"
+              xml:space="preserve"
+              class="arrow-small hiding-element"
+              fill="#00000"
+            >
+              <g>
+                <path
+                  d="M24.57,34.075c-0.505,0-1.011-0.191-1.396-0.577L8.11,18.432c-0.771-0.771-0.771-2.019,0-2.79    L23.174,0.578c0.771-0.771,2.02-0.771,2.791,0s0.771,2.02,0,2.79l-13.67,13.669l13.67,13.669c0.771,0.771,0.771,2.021,0,2.792    C25.58,33.883,25.075,34.075,24.57,34.075z"
+                />
+              </g>
+            </svg>
+          </li>
+          <div class="sub-menu">
+            <ul>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 1</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 2</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 3</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 4</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 5</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 6</span>
+              </li>
+            </ul>
+          </div>
+          <li class="flex-box menu-item">
+            <a href="#" class="sidebar-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                class="sidebar-icon"
+                fill="#00000"
+              >
+                <path
+                  d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"
+                ></path></svg
+              ><span class="hiding-element">Icons</span></a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 34.075 34.075"
+              style="enable-background: new 0 0 34.075 34.075"
+              xml:space="preserve"
+              class="arrow-small hiding-element"
+              fill="#00000"
+            >
+              <g>
+                <path
+                  d="M24.57,34.075c-0.505,0-1.011-0.191-1.396-0.577L8.11,18.432c-0.771-0.771-0.771-2.019,0-2.79    L23.174,0.578c0.771-0.771,2.02-0.771,2.791,0s0.771,2.02,0,2.79l-13.67,13.669l13.67,13.669c0.771,0.771,0.771,2.021,0,2.792    C25.58,33.883,25.075,34.075,24.57,34.075z"
+                />
+              </g>
+            </svg>
+          </li>
+          <div class="sub-menu">
+            <ul>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 1</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 2</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 3</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 4</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 5</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 6</span>
+              </li>
+            </ul>
+          </div>
+        </ul>
+        <span class="section-label hiding-element">FORMS & TABLES</span>
+        <ul>
+          <li class="flex-box menu-item">
+            <a href="#" class="sidebar-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                class="sidebar-icon"
+                fill="#00000"
+              >
+                <path
+                  d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"
+                ></path></svg
+              ><span class="hiding-element">Forms</span></a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 34.075 34.075"
+              style="enable-background: new 0 0 34.075 34.075"
+              xml:space="preserve"
+              class="arrow-small hiding-element"
+              fill="#00000"
+            >
+              <g>
+                <path
+                  d="M24.57,34.075c-0.505,0-1.011-0.191-1.396-0.577L8.11,18.432c-0.771-0.771-0.771-2.019,0-2.79    L23.174,0.578c0.771-0.771,2.02-0.771,2.791,0s0.771,2.02,0,2.79l-13.67,13.669l13.67,13.669c0.771,0.771,0.771,2.021,0,2.792    C25.58,33.883,25.075,34.075,24.57,34.075z"
+                />
+              </g>
+            </svg>
+          </li>
+          <div class="sub-menu">
+            <ul>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 1</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 2</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 3</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 4</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 5</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 6</span>
+              </li>
+            </ul>
+          </div>
+          <li class="flex-box menu-item">
+            <a href="#" class="sidebar-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                class="sidebar-icon"
+                fill="#00000"
+              >
+                <path
+                  d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"
+                ></path></svg
+              ><span class="hiding-element">Tables</span></a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 34.075 34.075"
+              style="enable-background: new 0 0 34.075 34.075"
+              xml:space="preserve"
+              class="arrow-small hiding-element"
+              fill="#00000"
+            >
+              <g>
+                <path
+                  d="M24.57,34.075c-0.505,0-1.011-0.191-1.396-0.577L8.11,18.432c-0.771-0.771-0.771-2.019,0-2.79    L23.174,0.578c0.771-0.771,2.02-0.771,2.791,0s0.771,2.02,0,2.79l-13.67,13.669l13.67,13.669c0.771,0.771,0.771,2.021,0,2.792    C25.58,33.883,25.075,34.075,24.57,34.075z"
+                />
+              </g>
+            </svg>
+          </li>
+          <div class="sub-menu">
+            <ul>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 1</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 2</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 3</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 4</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 5</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 6</span>
+              </li>
+            </ul>
+          </div>
+        </ul>
+        <span class="section-label hiding-element">PAGES</span>
+        <ul>
+          <li class="flex-box menu-item">
+            <a href="#" class="sidebar-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                class="sidebar-icon"
+                fill="#00000"
+              >
+                <path
+                  d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"
+                ></path></svg
+              ><span class="hiding-element">Authentication</span></a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 34.075 34.075"
+              style="enable-background: new 0 0 34.075 34.075"
+              xml:space="preserve"
+              class="arrow-small hiding-element"
+              fill="#00000"
+            >
+              <g>
+                <path
+                  d="M24.57,34.075c-0.505,0-1.011-0.191-1.396-0.577L8.11,18.432c-0.771-0.771-0.771-2.019,0-2.79    L23.174,0.578c0.771-0.771,2.02-0.771,2.791,0s0.771,2.02,0,2.79l-13.67,13.669l13.67,13.669c0.771,0.771,0.771,2.021,0,2.792    C25.58,33.883,25.075,34.075,24.57,34.075z"
+                />
+              </g>
+            </svg>
+          </li>
+          <div class="sub-menu">
+            <ul>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 1</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 2</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 3</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 4</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 5</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 6</span>
+              </li>
+            </ul>
+          </div>
+          <li class="flex-box menu-item">
+            <a href="#" class="sidebar-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                class="sidebar-icon"
+                fill="#00000"
+              >
+                <path
+                  d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"
+                ></path></svg
+              ><span class="hiding-element">User Profile</span></a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 34.075 34.075"
+              style="enable-background: new 0 0 34.075 34.075"
+              xml:space="preserve"
+              class="arrow-small hiding-element"
+              fill="#00000"
+            >
+              <g>
+                <path
+                  d="M24.57,34.075c-0.505,0-1.011-0.191-1.396-0.577L8.11,18.432c-0.771-0.771-0.771-2.019,0-2.79    L23.174,0.578c0.771-0.771,2.02-0.771,2.791,0s0.771,2.02,0,2.79l-13.67,13.669l13.67,13.669c0.771,0.771,0.771,2.021,0,2.792    C25.58,33.883,25.075,34.075,24.57,34.075z"
+                />
+              </g>
+            </svg>
+          </li>
+          <div class="sub-menu">
+            <ul>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 1</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 2</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 3</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 4</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 5</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 6</span>
+              </li>
+            </ul>
+          </div>
+          <li class="flex-box menu-item">
+            <a href="#" class="sidebar-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                class="sidebar-icon"
+                fill="#00000"
+              >
+                <path
+                  d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"
+                ></path></svg
+              ><span class="hiding-element">Timeline</span></a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 34.075 34.075"
+              style="enable-background: new 0 0 34.075 34.075"
+              xml:space="preserve"
+              class="arrow-small hiding-element"
+              fill="#00000"
+            >
+              <g>
+                <path
+                  d="M24.57,34.075c-0.505,0-1.011-0.191-1.396-0.577L8.11,18.432c-0.771-0.771-0.771-2.019,0-2.79    L23.174,0.578c0.771-0.771,2.02-0.771,2.791,0s0.771,2.02,0,2.79l-13.67,13.669l13.67,13.669c0.771,0.771,0.771,2.021,0,2.792    C25.58,33.883,25.075,34.075,24.57,34.075z"
+                />
+              </g>
+            </svg>
+          </li>
+          <div class="sub-menu">
+            <ul>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 1</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 2</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 3</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 4</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 5</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 6</span>
+              </li>
+            </ul>
+          </div>
+          <li class="flex-box menu-item">
+            <a href="#" class="sidebar-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                x="0px"
+                y="0px"
+                width="48"
+                height="48"
+                viewBox="0 0 48 48"
+                class="sidebar-icon"
+                fill="#00000"
+              >
+                <path
+                  d="M 23.951172 4 A 1.50015 1.50015 0 0 0 23.072266 4.3222656 L 8.859375 15.519531 C 7.0554772 16.941163 6 19.113506 6 21.410156 L 6 40.5 C 6 41.863594 7.1364058 43 8.5 43 L 18.5 43 C 19.863594 43 21 41.863594 21 40.5 L 21 30.5 C 21 30.204955 21.204955 30 21.5 30 L 26.5 30 C 26.795045 30 27 30.204955 27 30.5 L 27 40.5 C 27 41.863594 28.136406 43 29.5 43 L 39.5 43 C 40.863594 43 42 41.863594 42 40.5 L 42 21.410156 C 42 19.113506 40.944523 16.941163 39.140625 15.519531 L 24.927734 4.3222656 A 1.50015 1.50015 0 0 0 23.951172 4 z M 24 7.4101562 L 37.285156 17.876953 C 38.369258 18.731322 39 20.030807 39 21.410156 L 39 40 L 30 40 L 30 30.5 C 30 28.585045 28.414955 27 26.5 27 L 21.5 27 C 19.585045 27 18 28.585045 18 30.5 L 18 40 L 9 40 L 9 21.410156 C 9 20.030807 9.6307412 18.731322 10.714844 17.876953 L 24 7.4101562 z"
+                ></path></svg
+              ><span class="hiding-element">Errors</span></a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              id="Capa_1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 34.075 34.075"
+              style="enable-background: new 0 0 34.075 34.075"
+              xml:space="preserve"
+              class="arrow-small hiding-element"
+              fill="#00000"
+            >
+              <g>
+                <path
+                  d="M24.57,34.075c-0.505,0-1.011-0.191-1.396-0.577L8.11,18.432c-0.771-0.771-0.771-2.019,0-2.79    L23.174,0.578c0.771-0.771,2.02-0.771,2.791,0s0.771,2.02,0,2.79l-13.67,13.669l13.67,13.669c0.771,0.771,0.771,2.021,0,2.792    C25.58,33.883,25.075,34.075,24.57,34.075z"
+                />
+              </g>
+            </svg>
+          </li>
+          <div class="sub-menu">
+            <ul>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 1</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 2</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 3</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 4</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 5</span>
+              </li>
+              <li>
+                <svg
+                  height="512px"
+                  id="Layer_1"
+                  version="1.1"
+                  viewBox="0 0 512 512"
+                  width="512px"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  class="sidebar-icon"
+                >
+                  <polygon
+                    points="160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 "
+                  /></svg
+                ><span>Sub Item 6</span>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="main flex-box">
+      <div class="content-box flex-box">
+        <div class="small-card">some content</div>
+        <div class="small-card">some content</div>
+        <div class="small-card">some content</div>
+        <div class="big-card">some content</div>
+      </div>
+    </main>
+
+    <a href="https://icons8.com/icon/fy6uKlh40Ldp/left-arrow"></a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
